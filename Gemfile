@@ -13,7 +13,7 @@ gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
-
+gem 'rename'
 # external services
 gem 'newrelic_rpm'
 gem 'sentry-raven'
