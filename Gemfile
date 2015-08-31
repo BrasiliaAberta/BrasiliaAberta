@@ -14,9 +14,11 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'rename'
+
 # external services
 gem 'newrelic_rpm'
 gem 'sentry-raven'
+gem 'redis'
 
 # gems to help in rails 4 transition
 gem 'protected_attributes'
@@ -37,7 +39,6 @@ gem 'singularity-extras'
 gem 'oily_png'
 gem 'color-schemer'
 gem 'toolkit'
-
 
 group :test, :development do
   gem 'rspec-rails'
