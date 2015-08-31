@@ -6,4 +6,8 @@ class HomeController < ApplicationController
   	@events = Event.all
   end
 
+  def projects
+  	@projects = Project.all
+  end
+
 end
