@@ -1,6 +1,6 @@
 development:
   adapter: postgresql
-  database: rails_heroku_bootstrap_development
+  database: brasilia-aberta_development
   host: localhost
   user: postgres
   password:
@@ -10,7 +10,7 @@ development:
 
 test: &test
   adapter: postgresql
-  database: rails_heroku_bootstrap_test
+  database: brasilia-aberta_test
   host: localhost
   user: postgres
   password:
@@ -20,7 +20,7 @@ test: &test
 
 production:
   adapter: postgresql
-  database: rails_heroku_bootstrap_production
+  database: brasilia-aberta_production
   host: localhost
   user: postgres
   password:
