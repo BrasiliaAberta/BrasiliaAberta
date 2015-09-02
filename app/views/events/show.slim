@@ -1,5 +1,12 @@
 .container
-	h2 
-		'Evento #
-		=@event.number
-	h3 =@event.name
+	.event-header
+		h2 
+			'Evento #
+			=@event.number
+		h3 =@event.name
+	.row
+		.col-sm-7
+			p =@event.description
+		.col-sm-4.col-sm-offset-1
+			span.event-date =@event.date_formatted
+			a target="_blank" href="http://#{@event.facebook_link}" Participar
