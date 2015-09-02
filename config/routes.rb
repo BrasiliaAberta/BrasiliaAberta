@@ -6,8 +6,9 @@ BrasiliaAberta::Application.routes.draw do
   
   root  to:                     'home#index'
 
-  get 'events'               => 'home#events'
-  get 'projects'               => 'home#projects'
+  get 'events'               => 'events#index'
+  get 'events/:id'           => 'events#show'
+  get 'projects'             => 'home#projects'
   get 'contato'              => 'contacts#index', as: :contacts
   get 'contato/enviar'       => 'contacts#new',   as: :new_contact
 
