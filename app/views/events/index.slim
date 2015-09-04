@@ -1,22 +1,11 @@
 .container
 	h1 Eventos 
 	p Informações sobre eventos referentes ao Brasília Aberta.
-
-	table.table
-		thead
-			tr
-				th #
-				th Data
-				th Nome
-		tbody
-			- @events.each do |e|
-				tr
-					td = e.id
-					td = e.date
-					td 
-						a target="_blank" href="http://#{e.facebook_link}" = e.name
-						
-			end
-
-
+	- @events.each do |e|	
+		.event
+			span =e.date_formatted 
+			p =e.name
+			span =e.location
+	end
+	
 	
