@@ -1,11 +1,10 @@
 .container
   .starter-template
     .brasilia-aberta.row
-	    h1
-	      'Brasília Aberta
-	    p.description Brasília aberta é um encontro de trabalho, estudo e discussões sobre dados abertos e tecnologias cívicas. O encontro reúne pessoas de diferentes áreas e perfis, técnicos e não técnicos, para discutirem e criarem soluções criativas para problemas públicos. 
+	    
+	    p.description Brasília aberta é um encontro de trabalho, estudo e discussões sobre dados abertos e tecnologias cívicas. 
 
-	    p.description Se você é um entusiasta do movimento de Governo Aberto e deseja aprender, compartilhar e construir projetos nesse contexto, junte-se a nós e participe! 		
+	    p.sub-description Se você é um entusiasta do movimento de Governo Aberto e deseja aprender, compartilhar e construir projetos nesse contexto, junte-se a nós e participe! 		
  	.next-project.row
  		h4 Proximo Evento
  		h2.project-name = @next_event.name
@@ -14,4 +13,25 @@
  			
  		= link_to "Detalhes", "/events/#{@next_event.id}"
  		a.fb-link target="_blank" href="http://#{@next_event.facebook_link}" Clique aqui para participar! 
- 		
+ 	.about.row
+ 		h2 Sobre
+ 		p.about-desc Brasília aberta é um encontro de trabalho, estudo e discussões sobre dados abertos e tecnologias cívicas. O encontro reúne pessoas de diferentes áreas e perfis, técnicos e não técnicos, para discutirem e criarem soluções criativas para problemas públicos.
+ 		.row 
+ 			.col-md-16
+ 				h3 Principios
+ 			.col-md-4
+ 				h4 Transparencia
+ 				p As informações sobre as atividades de governo são abertas, compreensíveis, tempestivas, livremente acessíveis e atendem ao padrão básico de dados abertos.
+ 			.col-md-4
+ 				h4 Accountability
+ 				p Existem regras e mecanismos que estabelecem como os atores justificam suas ações, atuam sobre críticas e exigências e aceitam as responsabilidades que lhes são incumbidas.
+ 			.col-md-4
+ 				h4 Participação Cidadã
+ 				p O governo procura mobilizar a sociedade para debater, colaborar e propor contribuições que levam a um governo mais efetivo e responsivo.
+ 			.col-md-4
+ 				h4 Tecnologia e Inovação
+ 				p O governo reconhece a importância das novas tecnologias no fomento à inovação, provendo acesso à tecnologia e ampliando a capacidade da sociedade de utilizá-la.
+
+
+		
+
