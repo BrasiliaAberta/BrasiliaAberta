@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150902124853) do
+ActiveRecord::Schema.define(version: 20150904143920) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,13 +50,13 @@ ActiveRecord::Schema.define(version: 20150902124853) do
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
   create_table "events", force: :cascade do |t|
-    t.integer  "number"
     t.date     "date"
     t.text     "description"
     t.string   "facebook_link"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.string   "name"
+    t.text     "location"
   end
 
   create_table "projects", force: :cascade do |t|

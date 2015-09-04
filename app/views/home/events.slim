@@ -11,7 +11,7 @@
 		tbody
 			- @events.each do |e|
 				tr
-					td = e.number
+					td = e.id
 					td = e.date
 					td 
 						a target="_blank" href="http://#{e.facebook_link}" = e.description
