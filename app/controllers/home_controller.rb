@@ -1,8 +1,8 @@
 class HomeController < ApplicationController
 
   def index
-  	@next_event = Event.where(['date > ?', DateTime.now]).order(:date ).first
-  	
+  	@next_events = Event.order(date: :desc ).limit(3)
+    	
   end
 
   def events

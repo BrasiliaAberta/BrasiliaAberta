@@ -21,6 +21,16 @@ html.no-js lang="#{I18n.locale}"
     /[if lt IE 9]
       == javascript_include_tag 'html5shiv-printshiv'
 
+  #fb-root
+    javascript:
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=867123613376968";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
   body class="#{yield :body_class}" data-development-grid="hide"
     == render 'layouts/header'
     section.page
