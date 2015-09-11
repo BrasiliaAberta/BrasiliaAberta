@@ -1,5 +1,5 @@
 	
-    #brasilia-aberta.row
+    #brasilia-aberta.row.section
     	.container
 		    p.description 
 		    	| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -17,7 +17,7 @@
 		 			
 		 / 		= link_to "Detalhes", "/events/#{@next_event.id}"
 		 / 		a.fb-link target="_blank" href="http://#{@next_event.facebook_link}" Clique aqui para participar! 
- 	#about.row
+ 	#about.row.section
  		.container
 	 		.col-md-4
 	 			h2.section-header Sobre o encontro
@@ -35,7 +35,7 @@
 					b Lorem ipsum dolor sit amet. 
 					'Duis aute irure dolor in reprehenderit in voluptate velit esse
 					'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
- 	#principles.row
+ 	#principles.row.section
  		.container
 	 		.row  
 	 			.col-md-16
@@ -52,7 +52,7 @@
 	 			.col-md-4
 	 				h4 Tecnologia e Inovação
 	 				p O governo reconhece a importância das novas tecnologias no fomento à inovação, provendo acesso à tecnologia e ampliando a capacidade da sociedade de utilizá-la.
- 	#partners.row
+ 	#partners.row.section
  		.container
  			h2.section-header Outras Ações
  			.row
@@ -71,7 +71,7 @@
  				.col-md-3.partner
  					a target="_blank" href="http://www.cgu.gov.br/"	
  					 	= image_tag('logo_cgu.jpg', alt: "Controladoria Geral da União")
- 	#numbers
+ 	#numbers.row.section
  		.overlay.row
 	 		.container
 	 			h2.section-header Alguns números
@@ -89,7 +89,7 @@
 						h3 10
 						p PROJETOS
 
- 	#events.row
+ 	#events.row.section
  		.container
  			.col-md-5
  				h2.section-header Como Funciona
