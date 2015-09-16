@@ -1,43 +1,25 @@
-	
+
     #brasilia-aberta.row.section
     	.container
-		    p.description 
-		    	| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		    	  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				  consequat. 
+		    p.description
+		     | Somos um encontro de trabalho, estudo e discussões<br/>sobre dados abertos e tecnologias cívicas.
 
-		    / p.sub-description Se você é um entusiasta do movimento de Governo Aberto e deseja aprender, compartilhar e construir projetos nesse contexto, junte-se a nós e participe! 		
-	 	/ .next-project.row
-	 	/ 	.container
-		 / 		h4 Próximo Encontro
-		 / 		h2.project-name = @next_event.name
-		 / 		span.project-date =@next_event.date_formatted
-		 / 		p.project-description = @next_event.description
-		 			
-		 / 		= link_to "Detalhes", "/events/#{@next_event.id}"
-		 / 		a.fb-link target="_blank" href="http://#{@next_event.facebook_link}" Clique aqui para participar! 
  	#about.row.section
  		.container
 	 		.col-md-4
 	 			h2.section-header Sobre o encontro
 
 	 		.about-content.content.col-md-12
-	      		p 
-					b Lorem ipsum dolor sit amet. 
-					'Duis aute irure dolor in reprehenderit in voluptate velit esse
-					'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-	      		p 
-					b Lorem ipsum dolor sit amet. 
-					'Duis aute irure dolor in reprehenderit in voluptate velit esse
-					'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-				p 
-					b Lorem ipsum dolor sit amet. 
-					'Duis aute irure dolor in reprehenderit in voluptate velit esse
-					'cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+				p
+					'O encontro reúne pessoas de <b>diferentes áreas e perfis, técnicos e não técnicos</b>, para discutirem e criarem soluções criativas para problemas públicos.
+				p
+					'Se você é um entusiasta do movimento de Governo Aberto e <b>deseja aprender, compartilhar e construir projetos</b> nesse contexto, junte-se a nós e participe!
+				p
+					'O Brasília Aberta é <b>um encontro mão na massa</b>, nosso objetivo é ser o mais produtivo possível nas poucas horas que estamos juntos. <b>Queremos botar pra fazer!</b>
+
  	#principles.row.section
  		.container
-	 		.row  
+	 		.row
 	 			.col-md-16
 	 				h3.section-header Princípios
 	 			.col-md-4
@@ -52,6 +34,7 @@
 	 			.col-md-4
 	 				h4 Tecnologia e Inovação
 	 				p O governo reconhece a importância das novas tecnologias no fomento à inovação, provendo acesso à tecnologia e ampliando a capacidade da sociedade de utilizá-la.
+
  	#partners.row.section
  		.container
  			h2.section-header Outras Ações
@@ -63,55 +46,55 @@
  					a target="_blank" href="http://www.participa.br"
  						= image_tag('participa.png', alt: "Participa BR")
  				.col-md-3.partner
- 					a target="_blank" href="http://www.dados.gov.br/"	
+ 					a target="_blank" href="http://www.dados.gov.br/"
 	 					= image_tag('dadosgovbr.png', alt: "Portal Brasileiro de Dados Abertos")
  				.col-md-3.partner
- 					a target="_blank" href="http://www.opengovpartnership.org/"	
+ 					a target="_blank" href="http://www.opengovpartnership.org/"
  					 	= image_tag('ogp.jpg', alt: "Open Government Partnership")
  				.col-md-3.partner
- 					a target="_blank" href="http://www.cgu.gov.br/"	
+ 					a target="_blank" href="http://www.cgu.gov.br/"
  					 	= image_tag('logo_cgu.jpg', alt: "Controladoria Geral da União")
  	#numbers.row.section
  		.overlay.row
 	 		.container
-	 			h2.section-header Alguns números
+	 			h2.section-header.some-numbers Alguns números
 				.content
 					.col-md-4
 						h3 2015
 						p QUANDO COMEÇAMOS
 					.col-md-4
-						h3 150
+						h3 42
 						p PARTICIPANTES
 					.col-md-4
-						h3 10
+						h3 4
 						p EVENTOS
 					.col-md-4
-						h3 10
+						h3 6
 						p PROJETOS
 
  	#events.row.section
  		.container
- 			.col-md-5
+ 			.col-md-7.col-md-offset-1
  				h2.section-header Como Funciona
-				p	Nossos encontros tem um foco muito grande na execução de idéias e propostas. Queremos botar 	pra fazer!
-				p 	Aqui vai uma breve introdução sobre o que rola nos nossos encontros:
+				p	Nossos encontros tem um foco muito grande na execução de idéias e propostas. Queremos botar pra fazer!
+				p Aqui vai uma breve introdução sobre o que rola nos nossos encontros:
 				ul
-					li 
-						b Drops de conhecimento - 
+					li
+						b Drops de conhecimento -
 						span Uma pequena palestra com o objetivo de agregar mais conhecimento sobre cases, reflexões, tecnologia e vários outros tópicos relacionados ao contexto do encontro.
-					li 
-					 	b Network - 
+					li
+					 	b Network -
 						span Um coffee break e um momento onde todos tem a oportunidade de se apresentar e conhecer um novo colega, e quem sabe, um grande parceiro.
-					li 	
-						b Sessão de avisos - 
+					li
+						b Sessão de avisos -
 						span É hora de se atualizar, saber de outros eventos, notícias, oportunidades e avisos importantes para o grupo.
-					li 	
-						b Problemas, soluções e grupos de trabalho - 
+					li
+						b Problemas, soluções e grupos de trabalho -
 						span É hora de você compartilhar no que está trabalhando, se tem alguma necessidade ou precisa de alguma ajuda. Ou seja, um breve pitch do seu projeto, idéia ou problema.
-					li  
-						b Vamos trabalhar? 
+					li
+						b Vamos trabalhar?
 						span Você escolhe um grupo que sente afinidade e/ou pode ajudar de alguma forma.
-					
+
  			.col-md-6.col-md-offset-1
  				h2.section-header Onde nos encontrar
  				.next-events
@@ -129,11 +112,3 @@
 	 						.info.col-md-9
 	 							h2.title =e.name
 	 							p.details =e.description
-							/ .event.row
-		 				/ 		.date.col-md-7
-	 					/ 			p.day e.get_day
-	 					/ 			p.month e.get_month
-	 					/ 		.info.col-md-9
-	 					/ 			h2.title Lorem ipsum dolor sit amet
-	 					/ 			p.details 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 				aliquip ex ea commodo consequat.
-	 					
