@@ -26,13 +26,13 @@
 	 				h4 Transparência
 	 				p As informações sobre as atividades de governo devem ser abertas, compreensíveis, tempestivas, livremente acessíveis por qualquer cidadão e devem atender ao padrão básico de dados abertos.
 	 			.col-md-4
-	 				h4 Accountability
+	 				h4 Prestação de contas
 	 				p Devem existir regras e mecanismos que estabelecem como os atores justificam suas ações, atuam sobre críticas e exigências e aceitam as responsabilidades que lhes são incumbidas.
 	 			.col-md-4
-	 				h4 Participação Cidadã
+	 				h4 Participação cidadã
 	 				p O governo deve fomentar a participação social e mobilizar a sociedade para debater, colaborar e propor contribuições que levam a um governo mais efetivo e responsivo.
 	 			.col-md-4
-	 				h4 Tecnologia e Inovação
+	 				h4 Tecnologia e inovação
 	 				p O governo deve reconhecer a importância das novas tecnologias no fomento à inovação, provendo acesso à tecnologia e ampliando a capacidade da sociedade de utilizá-la.
 
  	#partners.row.section
@@ -67,29 +67,30 @@
 						p PARTICIPANTES
 					.col-md-4
 						h3 4
-						p EVENTOS
+						p ENCONTROS
 					.col-md-4
 						h3 6
 						p PROJETOS
 
  	#events.row.section
  		.container
- 			.col-md-7.col-md-offset-1
+ 			.col-md-7.col-md-offset-1.how
  				h2.section-header Como Funciona
-				p	Nossos encontros tem um foco muito grande na execução de idéias e propostas. Queremos botar pra fazer!
-				p Aqui vai uma breve introdução sobre o que rola nos nossos encontros:
+				p.about-event
+				 | Nossos encontros tem um foco muito grande na execução de idéias e propostas. Queremos botar pra fazer
+					Aqui vai uma breve introdução sobre o que rola nos nossos encontros:
 				ul
 					li
-						b Drops de conhecimento -
+						b Drops de conhecimento.&nbsp
 						span Uma pequena palestra com o objetivo de agregar mais conhecimento sobre cases, reflexões, tecnologia e vários outros tópicos relacionados ao contexto do encontro.
 					li
-					 	b Network -
+					 	b Network. &nbsp
 						span Um coffee break e um momento onde todos tem a oportunidade de se apresentar e conhecer um novo colega, e quem sabe, um grande parceiro.
 					li
-						b Sessão de avisos -
+						b Sessão de avisos. &nbsp
 						span É hora de se atualizar, saber de outros eventos, notícias, oportunidades e avisos importantes para o grupo.
 					li
-						b Problemas, soluções e grupos de trabalho -
+						b Problemas, soluções e grupos de trabalho. &nbsp
 						span É hora de você compartilhar no que está trabalhando, se tem alguma necessidade ou precisa de alguma ajuda. Ou seja, um breve pitch do seu projeto, idéia ou problema.
 					li
 						b Vamos trabalhar?
@@ -101,7 +102,7 @@
  					- @next_events.each_with_index do |e,i|
 	 					.event.row
 	 						- if i == 0
-	 							.date-first.col-md-7
+	 							.date.date-first.col-md-7
 	 								p.day =e.get_day
 		 							p.month = e.get_month
 
@@ -109,6 +110,9 @@
 	 							.date.col-md-7
 	 								p.day =e.get_day
 		 							p.month = e.get_month
+
 	 						.info.col-md-9
-	 							h2.title =e.name
+	 							h2.title
+									a.event-link href="#"
+	 									=e.name
 	 							p.details =e.description

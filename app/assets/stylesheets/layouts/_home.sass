@@ -1,6 +1,7 @@
 body
 	text-decoration: none
-	font-family: 'Roboto', sans-serif
+	font-family: $roboto-family
+
 	-webkit-font-smoothing: antialiased
 
 .section
@@ -64,9 +65,10 @@ body
 			margin: 20px
 
 #principles
-	background-image: url(fundo_listrado.png)
-	background-size: 3em
+	background-image: url('fundo_listrado.png')
+	background-size: 5%
 	background-position: top left
+	padding: 60px 0px
 
 	h4
 		font-weight: bold
@@ -88,61 +90,94 @@ body
 	font-size: 24px
 	display: inline-block
 	position: relative
-
 	font-size: 1.2em
 	text-transform: uppercase
+	font-family: $roboto-condensed-family
+
 	&:after
 		content: " /"
 
 	&.some-numbers
 		margin-left: 65px
 
+
 #numbers
-	.overlay
-		width
-		background: rgba(234, 41, 137, 0.85)
-		padding: 80px
 	background-image: url('ppl_working.jpg')
-
-
-
 	color: white
+
 	h3
 		text-align: center
 		font-size: 5em
 
 	p
 		text-align: center
-		line-height: 1.55em
-		font-size: 14px
+		font-size: 15px
+		font-weight: bold
+
+	.overlay
+		width
+		background: rgba(234, 41, 137, 0.85)
+		padding: 80px
+
+	.content
+		font-family: $roboto-condensed-family
 
 
 #events
 	padding: 40px 0px
-	ul
-		list-style-type: none
-		padding: 0
+	.section-header
+		margin-bottom: 30px
+
+	p.about-event
+		margin-bottom: 25px
+
+	.how
+		p, ul
+			font-family: 'PT Serif', serif
+			-webkit-font-smoothing: antialiased
+			line-height: 30px
+			font-size: 18px
+
+		ul
+			list-style-type: none
+			padding: 0
+			li
+				margin-bottom: 25px
+
+	p.details
+		font-family: 'PT Serif', serif
+		-webkit-font-smoothing: antialiased
+		line-height: 1.55em
+		font-size: 15px
+
 
 	.next-events
 		border-top: 1px solid #dddddd
+		.title
+			font-size: 30px
+			margin-top: 10px
+
 
 	.date
+		margin-top: 35px
 		text-align: center
+		font-family: $roboto-condensed-family
 		color: rgb(200,200,200)
+
 		.day
-			font-size: 100px
+			font-size: 80px
+			line-height: 65px
+			margin-bottom: 0px
 
 		.month
-
 			font-size: 20px
-	.date-first
-		text-align: center
-		.day
-			font-size: 100px
 
+	.date-first
+		.day
+			color: black
 		.month
 			color: rgb(234,41,137)
-			font-size: 20px
+
 	.info
 		margin: 20px 0
 		border-left: 1px solid #dddddd
