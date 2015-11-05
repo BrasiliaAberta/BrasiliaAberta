@@ -8,17 +8,22 @@ body
 	width: 100%
 
 #brasilia-aberta
-	padding: 0px
-	margin: 0px
-	background: url('ceu_bkg.jpg')
-	background-repeat: no-repeat
-	background-position: center
 	background-size: cover
+	min-height: 100%
+	height: 100%
 	width: 100%
-	//height: 100vh
-	height: 600px
-	margin-bottom: 30px
-	color: white
+	background-color: #212121
+
+	.hero
+		position: relative
+		height: 100%
+
+	.hero-media
+		padding: 0px
+		margin: 0px
+		background: url("ceu_bkg.jpg") no-repeat 50% 100%
+		background-size: cover
+		height: 600px
 
 	a
 		color: white
@@ -27,10 +32,11 @@ body
 		font-size: 30px
 
 	.description
-		font-size: 34px
+		color: white
+		font-size: 26px
 		font-weight: 300
 		position: absolute
-		bottom: 30px
+		bottom: 10px
 
 	.sub-description
 		font-size: 24px
