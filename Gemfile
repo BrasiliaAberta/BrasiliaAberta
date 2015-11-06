@@ -31,6 +31,7 @@ gem 'uglifier', '~> 2.7.1'
 gem 'font_assets'
 gem 'modernizr-rails'
 gem 'selectivizr-rails'
+gem 'font-awesome-rails'
 # compass and plugins
 gem 'compass-normalize'
 gem 'singularitygs'
@@ -63,7 +64,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'bullet'
-  gem 'rack-mini-profiler'  
+  gem 'rack-mini-profiler'
 end
 
 group :production do
