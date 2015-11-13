@@ -9,6 +9,6 @@ class Event < ActiveRecord::Base
 	end
 
 	def get_month
-		date.strftime("%B")
+		I18n.localize(date, format: '%B')
 	end
 end
