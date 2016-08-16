@@ -6,7 +6,7 @@ Fique a vontade para contribuir com este projeto. Você pode sugerir uma issue o
 
 1. Clone o repositório:
     ```
-     git clone git@github.com:novatics/rails-bootstrap.git my_new_project
+     git clone https://github.com/BrasiliaAberta/BrasiliaAberta.git
      cd my_new_project
     ```
 
